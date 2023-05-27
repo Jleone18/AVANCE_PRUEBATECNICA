@@ -1,0 +1,216 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    background-color: #eee;
+    overflow-x: hidden;
+}
+
+.btnsidebar {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    height: 37px;
+    width: 37px;
+    text-align: center;
+    background: #1e1e1e;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+    left: 12.5%
+}
+
+    .btnsidebar.click {
+        left: 0px
+    }
+
+    .btnsidebar span {
+        color: white;
+        font-size: 15px;
+        line-height: 36px
+    }
+
+.sidebar {
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    left: 0px;
+    background: #fff;
+    transition: left 0.4s ease;
+    border: 1px solid #878787;
+}
+
+    .sidebar.show {
+        left: -250px
+    }
+
+    .sidebar .text {
+        color: black;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+        background: white;
+        letter-spacing: 1px
+    }
+
+nav ul {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 10px
+}
+
+    nav ul li {
+        line-height: 20px;
+        border-top: 1px solid #fff;
+    }
+
+        nav ul li:last-child {
+            border-bottom: 1px solid #fff;
+        }
+
+        nav ul li a {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            font-size: 13px;
+            padding-left: 14px;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            border-left: 3px solid transparent
+        }
+
+        nav ul li.active a {
+            color: white;
+            background: #f4f4f4;
+            border-left-color: white;
+        }
+
+        nav ul li a:hover {
+            background: #f4f4f4;
+            color: black;
+        }
+
+.feat-show {
+    transition: all 0.5s
+}
+
+nav ul li.active ul {
+    transition: all 0.5s
+}
+
+.p {
+    color: black;
+}
+
+nav ul ul {
+    position: static;
+    display: none
+}
+
+nav ul.show {
+    display: block;
+    transition: all 0.5s
+}
+
+nav ul ul li {
+    line-height: 42px;
+    border-top: none
+}
+
+    nav ul ul li a {
+        font-size: 12px;
+        color: white
+    }
+
+nav ul li.active ul li a {
+    color: white;
+    color: black;
+    border-left-color: transparent
+}
+
+a:hover {
+    color: white !important
+}
+
+nav ul ul li a:hover {
+    color: white;
+    background: #1e1e1e !important
+}
+
+nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    transition: transform 0.4s
+}
+
+    nav ul li a span.rotate {
+        transform: translateY(-50%) rotate(-180deg)
+    }
+
+.content {
+    position: absolute;
+}
+
+.separator {
+    height: 1px;
+    border-bottom: solid thin #878787;
+    margin: 15px 0;
+}
+
+#contenedor {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+.principal {
+    width: 84%;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.principal1 {
+    width: 96%;
+}
+
+#sidebarrr {
+    width: 15%;
+}
+
+#profile {
+    padding-top: 15px;
+    text-align: center
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+    gap: 50px;
+    background-color: #eee;
+    padding: 80px 30px 30px 30px;
+}
+
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #d8d8d8;
+        border: 1px solid #d8d8d8;
+        text-align: center;
+        font-size: 30px;
+    }

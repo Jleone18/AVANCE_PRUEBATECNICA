@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Administration.Models.CategoriaVm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center contenedora" style="padding-top:200px">
+    <div class="text-center homeTitle">
+        <h1 class="display-10">
+            PRUEBA TÉCNICA
+        </h1>
+
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-10">
+            <p><h2><i class="fa-solid fa-users "></i>Categorias</h2></p>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn bg-success text-white" data-url="@Url.Action("Create")" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-user-plus text-white"></i>  Crear Categoria</button>
+        </div>
+
+
+    </div>
+    <div id="modalGenerico">
+    </div>
+    <div class="row" style="padding-top:20px">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IdCategoria)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nombre)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdCategoria)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+</div>
+<div class="row" style="height:30%">
+
+</div>

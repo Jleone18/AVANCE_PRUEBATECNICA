@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Administration.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center contenedora" style="padding-top:200px">
+    <div class="text-center homeTitle">
+        <h1 class="display-10">
+            PRUEBA TÉCNICA
+        </h1>
+
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-10">
+            <p><h2><i class="fa-solid fa-users "></i>Usuarios</h2></p>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn bg-success text-white" data-url="@Url.Action("Create")" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-user-plus text-white"></i>  Crear Cliente</button>
+        </div>
+
+
+    </div>
+    <div id="modalGenerico">
+    </div>
+    <div class="row" style="padding-top:20px">
+
+        <table class="table  " id="table_id">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Identificación</th>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cliente in Model)
+                {
+                    <tr>
+                        <td>@cliente.IdCliente</td>
+                        <td>@cliente.Identificacion</td>
+                        <td>@cliente.Nombre</td>
+                        <td>@cliente.Direccion</td>
+                        <td>@cliente.Telefono</td>
+                        <td>@cliente.Correo</td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+</div>
+<div class="row" style="height:30%">
+ 
+</div>
