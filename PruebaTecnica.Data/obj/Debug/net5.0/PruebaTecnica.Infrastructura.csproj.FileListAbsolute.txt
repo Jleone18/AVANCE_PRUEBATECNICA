@@ -1,3 +1,7 @@
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.AssemblyInfoInputs.cache
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.AssemblyInfo.cs
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.csproj.CoreCompileInputs.cache
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\bin\Debug\net5.0\PruebaTecnica.Infrastructura.deps.json
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\bin\Debug\net5.0\PruebaTecnica.Infrastructura.runtimeconfig.json
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\bin\Debug\net5.0\PruebaTecnica.Infrastructura.runtimeconfig.dev.json
@@ -9,10 +13,6 @@ C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\bin\Debug\
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\bin\Debug\net5.0\PruebaTecnica.Application.pdb
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\bin\Debug\net5.0\PruebaTecnica.Domain.pdb
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.csproj.AssemblyReference.cache
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.AssemblyInfoInputs.cache
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.AssemblyInfo.cs
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.csproj.CoreCompileInputs.cache
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.csproj.CopyComplete
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\PruebaTecnica.Infrastructura.dll
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Data\obj\Debug\net5.0\ref\PruebaTecnica.Infrastructura.dll

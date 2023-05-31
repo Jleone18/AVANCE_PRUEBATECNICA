@@ -32,6 +32,7 @@ namespace PruebaTecnica.Application.Utilitis.Mappings
         {
             
             CreateMap<Factura, FacturaVm>();
+          
             CreateMap<Factura, FacturaCompletaVm>();
             CreateMap<Categoria, CategoriaVm>();
             CreateMap<Producto, ProductoVm>();
@@ -39,7 +40,7 @@ namespace PruebaTecnica.Application.Utilitis.Mappings
             CreateMap<Cliente, ClienteVm>();
 
             CreateMap<Detalle, DetalleVm>().ReverseMap();
-      
+            CreateMap<Detalle, DetalleVm2>().ReverseMap();
 
             CreateMap<CreateCategoriaCommand, Categoria>();
             CreateMap<CreateCajaCommand, Caja>();

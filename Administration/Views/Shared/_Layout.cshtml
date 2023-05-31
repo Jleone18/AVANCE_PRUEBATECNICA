@@ -26,27 +26,37 @@
                     <li class="active"><a asp-controller="Home" asp-action="Index"><p class="p">Dashboard</p></a></li>
                     <div class="separator"></div>
                     <li>
-                        <a href="#" id="1"><p class="p"><i class="fa-solid fa-toolbox"></i> Administracion</p><span class="fas fa-caret-down"></span> </a>
+                        <a href="#" id="1"><p class="p"><i class="fa-solid fa-toolbox"></i> Cliente</p><span class="fas fa-caret-down"></span> </a>
                         <ul class="item-show-1">
                             <div class="separator"></div>
-                            <li><a asp-controller="Cliente" asp-action="Index"><p class="p"><i class="fa-solid fa-user"></i>Clientes</p></a></li>
-                       
+
+                            <li><a asp-controller="Cliente" asp-action="Index"><p class="p"><i class="fa-solid fa-user"></i>Lista Clientes</p></a></li>
+
                         </ul>
                     </li>
                     <div class="separator"></div>
                     <li>
-                        <a href="#" id="2"><p>Productos</p> <span class="fas fa-caret-down"></span> </a>
+                        <a href="#" id="2"><p class="p"><i class="fa-solid fa-toolbox"></i> Venta</p><span class="fas fa-caret-down"></span> </a>
                         <ul class="item-show-2">
-                            <li><a asp-controller="Category" asp-action="Index">Categoria</a></li>
-                            <li><a asp-controller="Product" asp-action="Index">Nuevo Producto</a></li>
+                            <div class="separator"></div>
+
+                            <li><a asp-controller="Factura" asp-action="Create"><p class="p"><i class="fa-solid fa-user"></i>Nueva Venta</p></a></li>
+                            <li><a asp-controller="Factura" asp-action="Index"><p class="p"><i class="fa-solid fa-user"></i>Lista Ventas</p></a></li>
                         </ul>
                     </li>
                     <div class="separator"></div>
-                    <li><a asp-controller="Customer" asp-action="Index"><p class="p">Cliente</p></a></li>
-                    <div class="separator"></div>
-                    <li><a asp-controller="Invoice" asp-action="Index"><p class="p">Ventas</p></a></li>
-                    <div class="separator"></div>
-        
+                    <li>
+                        <a href="#" id="3"><p class="p"><i class="fa-solid fa-toolbox"></i> Producto</p><span class="fas fa-caret-down"></span> </a>
+                        <ul class="item-show-3">
+                            <div class="separator"></div>
+
+                            <li><a asp-controller="Producto" asp-action="Index"><p class="p"><i class="fa-solid fa-user"></i>Lista Producto</p></a></li>
+
+                        </ul>
+                    </li>
+
+
+
                 </ul>
             </nav>
         </div>

@@ -1,3 +1,9 @@
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.csproj.AssemblyReference.cache
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.AssemblyInfoInputs.cache
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.AssemblyInfo.cs
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.csproj.CoreCompileInputs.cache
+C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\net5.0\PruebaTecnica.Api.exe
@@ -58,13 +64,6 @@ C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\n
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\net5.0\PruebaTecnica.Infrastructura.pdb
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\net5.0\PruebaTecnica.Application.pdb
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\bin\Debug\net5.0\PruebaTecnica.Domain.pdb
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.csproj.AssemblyReference.cache
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.AssemblyInfoInputs.cache
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.AssemblyInfo.cs
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.csproj.CoreCompileInputs.cache
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\scopedcss\bundle\PruebaTecnica.Api.styles.css
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\staticwebassets\PruebaTecnica.Api.StaticWebAssets.Manifest.cache
 C:\Users\FullComputador\source\repos\ClassLibrary1\PruebaTecnica.Api\obj\Debug\net5.0\PruebaTecnica.Api.RazorTargetAssemblyInfo.cache

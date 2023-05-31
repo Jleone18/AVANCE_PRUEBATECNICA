@@ -23,7 +23,7 @@ namespace PruebaTecnica.Application.Features.Clientes.Queries.GetClienteByCedula
 
         public async Task<List<ClienteVm>> Handle(GetClienteQuery request, CancellationToken cancellationToken)
         {
-            var clientes = await _unitOfWork.ClienteRepository.GetAsync(x => x.Identificacion.Equals(request.Parametro) || x.Nombre.Equals(request.Parametro));
+            var clientes = await _unitOfWork.ClienteRepository.GetAsync(x => x.Identificacion.Equals(request.Parametro) || x.Nombre.Contains(request.Parametro));
             return _mapper.Map<List<ClienteVm>>(clientes);
         }
     }

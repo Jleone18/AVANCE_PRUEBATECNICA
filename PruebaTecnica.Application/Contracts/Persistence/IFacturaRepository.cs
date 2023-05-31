@@ -12,5 +12,7 @@ namespace PruebaTecnica.Application.Contracts.Persistence
     {
         Task<FacturaCompletaVm> GetFacturaDetallesAsync(long idFactura);
         Task<List<Factura>> GetAllFacturaDetallesAsync( );
+
+        Task<string> GetLastNumberFacturaAsync();
     }
 }

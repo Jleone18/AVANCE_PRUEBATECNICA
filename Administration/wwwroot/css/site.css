@@ -200,9 +200,9 @@ nav ul li a span {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     
-    gap: 50px;
+    gap: 5px;
     background-color: #eee;
     padding: 80px 30px 30px 30px;
 }

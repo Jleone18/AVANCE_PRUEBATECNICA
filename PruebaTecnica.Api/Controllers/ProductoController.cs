@@ -33,9 +33,9 @@ namespace PruebaTecnica.Api.Controllers
             return Ok(productos);
 
         }
-        [HttpGet("parametro", Name = "GetProductsByNombre")]
+        [HttpGet("{parametro}", Name = "GetProductsByName")]
         [ProducesResponseType(typeof(IEnumerable<ProductoVm>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<IEnumerable<ProductoVm>>> GetProductsByNombre(string parametro)
+        public async Task<ActionResult<IEnumerable<ProductoVm>>> GetProductsByName(string parametro)
         {
             var query = new GetProductoByNameQuery(parametro);
             var productos = await _mediator.Send(query);

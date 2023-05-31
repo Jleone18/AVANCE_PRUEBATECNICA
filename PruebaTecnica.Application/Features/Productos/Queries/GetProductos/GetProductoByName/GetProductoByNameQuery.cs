@@ -9,11 +9,11 @@ namespace PruebaTecnica.Application.Features.Productos.Queries.GetProductos.GetP
 {
     public class GetProductoByNameQuery:IRequest<List<ProductoVm>>
     {
-        public string Nombre { get; set; }
+        public string Parametro { get; set; }
 
-        public GetProductoByNameQuery(string nombre)
+        public GetProductoByNameQuery(string parametro)
         {
-            Nombre = nombre;
+            Parametro = parametro;
         }
     }
 }

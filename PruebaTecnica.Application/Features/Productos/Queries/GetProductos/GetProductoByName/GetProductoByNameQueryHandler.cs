@@ -23,8 +23,20 @@ namespace PruebaTecnica.Application.Features.Productos.Queries.GetProductos.GetP
 
         public async Task<List<ProductoVm>> Handle(GetProductoByNameQuery request, CancellationToken cancellationToken)
         {
-            var productos = await _unitOfWork.ProductoRepository.GetAsync(x => x.IdProducto.Equals(request.Nombre) || x.Descripcion.Equals(request.Nombre));
-            return _mapper.Map<List<ProductoVm>>(productos);
+            var productos = await _unitOfWork.ProductoRepository.GetAsync(x => x.Nombre.Contains(request.Parametro) || x.Descripcion.Contains(request.Parametro) || x.Codigo.Contains(request.Parametro));
+            
+            var productoss = _mapper.Map<List<ProductoVm>>(productos);
+            foreach (var pro in productoss)
+            {
+             
+                var categoria = await _unitOfWork.CategoriaRepository.GetByIdAsync(pro.IdCategoria);
+                if (categoria.Nombre !="")
+                {
+                    pro.Categoria = categoria.Nombre;
+                }
+              
+            }
+            return _mapper.Map<List<ProductoVm>>(productoss);
         }
     }
 }

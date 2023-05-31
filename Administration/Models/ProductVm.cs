@@ -9,8 +9,10 @@ namespace Administration.Models
     {
         public long IdProducto { get; set; }
         public long IdCategoria { get; set; }
+        public string Nombre { get; set; }
         public string Categoria { get; set; }
         public string Codigo { get; set; }
+        public float Precio { get; set; }
         public string Descripcion { get; set; }
     }
 }

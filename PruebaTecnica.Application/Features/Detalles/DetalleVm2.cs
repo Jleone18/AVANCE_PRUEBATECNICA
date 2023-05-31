@@ -10,8 +10,8 @@ namespace PruebaTecnica.Application.Features.Detalles
 {
     public class DetalleVm2
     {
-        public long IdDetalle { get; set; }
-        public List<Producto> Producto { get; set; }
+       
+        public long IdProducto { get; set; }
         public decimal Cantidad { get; set; }
         public string UnidadMedida { get; set; }
         public double Precio { get; set; }

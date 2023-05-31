@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Administration.Models
 {
-    public class Factura
+    public class FacturaVm
     {
         public long IdFactura { get; set; }
         public long IdCaja { get; set; }

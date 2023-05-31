@@ -30,6 +30,7 @@ namespace PruebaTecnica.Application.Features.Facturas.Commands.Create
           
             Factura factura = new Factura();
             _mapper.Map(request, factura, typeof(CreateFacturaCommand), typeof(Factura));
+            factura.NumeroFactura = await _unitOfWork.FacturaRepository.GetLastNumberFacturaAsync();
             _unitOfWork.FacturaRepository.AddEntity(factura);
             var result = await _unitOfWork.Complete();
             if (result <= 0)

@@ -23,8 +23,19 @@ namespace PruebaTecnica.Application.Features.Productos.Queries.GetProductos
 
         public async Task<List<ProductoVm>> Handle(GetProductosListQuery request, CancellationToken cancellationToken)
         {
-            var producto = await _unitOfWork.ProductoRepository.GetAllAsync();
-            return _mapper.Map<List<ProductoVm>>(producto);
+            var productos = await _unitOfWork.ProductoRepository.GetAllAsync();
+            var productoss = _mapper.Map<List<ProductoVm>>(productos);
+            foreach (var pro in productoss)
+            {
+
+                var categoria = await _unitOfWork.CategoriaRepository.GetByIdAsync(pro.IdCategoria);
+                if (categoria.Nombre != "")
+                {
+                    pro.Categoria = categoria.Nombre;
+                }
+
+            }
+            return productoss;
         }
     }
 }

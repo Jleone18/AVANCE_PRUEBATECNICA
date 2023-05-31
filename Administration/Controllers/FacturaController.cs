@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Formatting;
 using System.Threading.Tasks;
 
 namespace Administration.Controllers
@@ -21,14 +22,14 @@ namespace Administration.Controllers
         }
         public IActionResult Index()
         {
-            List<Factura> factura = new List<Factura>();
+            List<FacturaVm> factura = new List<FacturaVm>();
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(_baseurl);
             var request = client.GetAsync("api/Factura/GetInvoicesList").Result;
             if (request.IsSuccessStatusCode)
             {
                 var resultString = request.Content.ReadAsStringAsync().Result;
-                factura = JsonConvert.DeserializeObject<List<Factura>>(resultString);
+                factura = JsonConvert.DeserializeObject<List<FacturaVm>>(resultString);
                 return View(factura);
             }
 
@@ -36,18 +37,39 @@ namespace Administration.Controllers
         }
         public IActionResult Create()
         {
-            List<Factura> factura = new List<Factura>();
+            List<FacturaVm> factura = new List<FacturaVm>();
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(_baseurl);
             var request = client.GetAsync("api/Factura/GetInvoicesList").Result;
             if (request.IsSuccessStatusCode)
             {
                 var resultString = request.Content.ReadAsStringAsync().Result;
-                factura = JsonConvert.DeserializeObject<List<Factura>>(resultString);
+                factura = JsonConvert.DeserializeObject<List<FacturaVm>>(resultString);
                 return View(factura);
             }
 
             return View(factura);
+        }
+        [HttpPost]
+        public IActionResult CreateFactura([FromBody] FacturaCompletaRequestVm factura)
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(_baseurl);
+            var request = client.PostAsync("api/Factura/", factura, new JsonMediaTypeFormatter()).Result;
+
+            if (request.IsSuccessStatusCode)
+            {
+                var resultString = request.Content.ReadAsStringAsync().Result;
+                var result = JsonConvert.DeserializeObject<long>(resultString);
+                if (!result.Equals(0))
+                {
+                    return Json(new { respuesta = true });
+                }
+                return Json(new { respuesta = false });
+            }
+            
+
+            return Json(new { respuesta = false });
         }
         public IActionResult Detalle(int id)
         {
@@ -61,9 +83,7 @@ namespace Administration.Controllers
                 factura = JsonConvert.DeserializeObject<FacturaCompletaVm>(resultString);
                 return View(factura);
             }
-
             return View(factura);
-       
         }
     }
 }

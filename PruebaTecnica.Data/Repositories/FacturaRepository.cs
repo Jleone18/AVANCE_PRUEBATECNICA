@@ -63,6 +63,8 @@ namespace PruebaTecnica.Infrastructura.Repositories
                 ProductoVm productoVm = new ProductoVm();
                 var product = await _context.Productos!.Where(x => x.IdProducto == detalle.IdProducto).FirstOrDefaultAsync();
                 productoVm.IdProducto = product.IdProducto;
+                productoVm.Nombre = product.Nombre;
+            
                 productoVm.Codigo = product.Codigo;
                 productoVm.Descripcion = product.Descripcion;
                 productoVm.Categoria =  _context.Categoria!.Where(x => x.IdCategoria == product.IdCategoria).FirstOrDefaultAsync().Result.Nombre;
@@ -79,7 +81,17 @@ namespace PruebaTecnica.Infrastructura.Repositories
             facturaCompleta.Detalles = detalleVmList;
             return facturaCompleta;
         }
-        
+        public async Task<string> GetLastNumberFacturaAsync()
+        {
+            var numero = await _context.Facturas!.OrderByDescending(x => x.IdFactura).FirstOrDefaultAsync();
+            if (numero==null)
+            {
+               
+                return "1";
+            }
+            
+            return numero.NumeroFactura;
+        }
 
     }
 }
