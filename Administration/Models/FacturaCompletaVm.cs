@@ -25,7 +25,7 @@ namespace Administration.Models
         public ProductoVm Producto { get; set; }
         public decimal Cantidad { get; set; }
         public string UnidadMedida { get; set; }
-        public double Precio { get; set; }
+        public double? Precio { get; set; }
         public double Iva { get; set; }
         public double Subtotal { get; set; }
     }
@@ -33,10 +33,10 @@ namespace Administration.Models
     {
         public long IdProducto { get; set; }
         public long IdCategoria { get; set; }
-        public string Nombre { get; set; }
-        public string Categoria { get; set; }
-        public string Codigo { get; set; }
-        public float Precio { get; set; }
+        public string? Nombre { get; set; }
+        public string? Categoria { get; set; }
+        public string? Codigo { get; set; }
+        public float? Precio { get; set; }
         public string Descripcion { get; set; }
     }
 }

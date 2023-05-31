@@ -90,7 +90,7 @@ namespace PruebaTecnica.Infrastructura.Repositories
                 return "1";
             }
             
-            return numero.NumeroFactura;
+            return numero.NumeroFactura+1;
         }
 
     }
